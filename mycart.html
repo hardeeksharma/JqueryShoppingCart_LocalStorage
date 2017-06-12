@@ -1,0 +1,100 @@
+<html>
+<head>
+   
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
+     
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css" />
+<script src="cart.js"></script>    
+    <script type="text/javascript">
+     
+   
+        //retrieveCart();
+        
+
+    </script>
+    
+</head>
+<body>
+
+   <section class="wrapper" style="background: #d0d0d0;">
+    <div class="container">
+          <div style="background: #0275d8;margin: 10;padding: 5;overflow: hidden;">
+            <h1 class="heading" style="margin-bottom: 0;color: white;float: left;font-family: Century  Gothic;">
+                 My Cart
+            </h1>
+            <div onclick="goToShop();" class="btn btn-warning" id="mycart" style=" margin-right:10px;font-weight:700;cursor:pointer;display:inline-block;float:right;margin-top: 10px;">
+                <span>Go To Shop</span>
+            </div>
+            
+        </div>
+      
+<style>
+    .show{
+        visibility: visible;
+    }
+    
+    .hidden {
+        
+        display: none;
+    }
+    
+    thead{
+        background: #f0ad4e;
+color: white;
+font-size: 25px;
+    }
+    
+    .table{
+        border: solid black 2px;
+    }
+</style>
+<div class=" alert alert-success hidden" id="cartAdded" role="alert">
+  <strong>Product Added Successfully to the cart.</strong>
+</div>
+<div class="alert  alert-info hidden" id="cartUpdated" role="alert">
+  <strong>Product  already in cart. Quantity Updated.</strong>
+</div>
+
+<div class="alert alert-danger hidden" id="cartEmpty" role="alert">
+  <strong>Oh snap! Cart is Empty Now.</strong>
+</div>
+        
+        
+        <div class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="myCartData" >
+                                     
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><h3>Total</h3></td>
+                        <td class="text-left"><h3 id="totalSum"></h3></td>
+                    </tr>
+                   
+                </tfoot>
+            </table>
+        </div>
+ 
+
+      
+    </div>
+</section>
+
+</body>
+</html>
